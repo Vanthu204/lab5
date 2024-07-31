@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
 
     <EditText
-        android:id="@+id/demo51Txt2"
+        android:id="@+id/demo51Txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="103dp"
@@ -15,7 +16,7 @@
         android:layout_marginBottom="31dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Masp"
         app:layout_constraintBottom_toTopOf="@+id/demo51Txt2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +31,7 @@
         android:layout_marginBottom="47dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="tensp"
         app:layout_constraintBottom_toTopOf="@+id/demo51Txt3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,33 +42,64 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginEnd="98dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="mota"
         app:layout_constraintBottom_toTopOf="@+id/demo51TvKQ"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/demo51TvKQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginEnd="186dp"
-        android:layout_marginBottom="53dp"
+
+        android:layout_marginBottom="36dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/demo51Btn1"
+        app:layout_constraintBottom_toTopOf="@+id/btninsert"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnselect"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/demo51Btn1"
+        android:id="@+id/btnselect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="298dp"
-        android:text="Button"
+        android:text="select"
+        app:layout_constraintBottom_toTopOf="@+id/btndelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        app:layout_constraintBottom_toTopOf="@+id/btnupdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:text="update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
